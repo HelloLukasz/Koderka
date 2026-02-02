@@ -83,7 +83,7 @@ p {
   align-items: center;
   padding-top: var(--space-20);
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color-background) 0%, #EEF2F7 100%);
+  background: var(--color-white);
 }
 
 .hero__content {
@@ -95,8 +95,8 @@ p {
 .hero__tagline {
   display: inline-block;
   padding: var(--space-2) var(--space-4);
-  background-color: var(--color-accent);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   font-size: var(--text-sm);
   font-weight: var(--font-semibold);
   text-transform: uppercase;
@@ -138,44 +138,47 @@ p {
 
 .hero__shape {
   position: absolute;
-  opacity: 0.1;
 }
 
 .hero__shape--1 {
-  width: 300px;
-  height: 300px;
-  background: var(--color-primary);
+  width: 400px;
+  height: 400px;
+  background: var(--color-accent);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  top: 10%;
-  right: 10%;
+  top: 5%;
+  right: 5%;
+  opacity: 0.15;
 }
 
 .hero__shape--2 {
   width: 200px;
   height: 200px;
-  background: var(--color-accent);
+  background: var(--color-accent-secondary);
   border-radius: 50%;
-  bottom: 20%;
-  right: 25%;
+  bottom: 15%;
+  right: 20%;
+  opacity: 0.2;
 }
 
 .hero__shape--3 {
   width: 150px;
   height: 150px;
-  background: var(--color-secondary);
+  border: 3px solid var(--color-primary);
   border-radius: 20%;
-  top: 40%;
-  right: 5%;
+  top: 35%;
+  right: 8%;
   transform: rotate(45deg);
+  opacity: 0.1;
 }
 
 .hero__shape--4 {
-  width: 100px;
-  height: 100px;
-  background: var(--color-verba);
+  width: 80px;
+  height: 80px;
+  background: var(--color-accent);
   border-radius: 50%;
-  bottom: 30%;
-  left: 5%;
+  bottom: 25%;
+  left: 8%;
+  opacity: 0.3;
 }
 
 /* ===========================================
@@ -211,7 +214,7 @@ p {
 }
 
 .verba-preview__header {
-  background: var(--color-verba);
+  background: var(--color-accent);
   padding: var(--space-4) var(--space-6);
   display: flex;
   align-items: center;
@@ -256,13 +259,14 @@ p {
 .verba-preview__icon {
   width: 32px;
   height: 32px;
-  background: var(--color-verba);
+  background: var(--color-primary);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
-  font-size: var(--text-lg);
+  font-size: var(--text-xs);
+  font-weight: var(--font-bold);
 }
 
 .verba-preview__text {
@@ -310,7 +314,7 @@ p {
   font-weight: var(--font-semibold);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-accent);
+  color: var(--color-text-muted);
   margin-bottom: var(--space-4);
 }
 
@@ -335,15 +339,20 @@ p {
 .about__founder-avatar {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: var(--color-border);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  font-weight: var(--font-bold);
+  color: var(--color-text-muted);
+  font-size: var(--text-2xl);
+  overflow: hidden;
+}
+
+.about__founder-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about__founder-info h4 {
@@ -372,7 +381,7 @@ p {
 .about__visual-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--color-accent) 0%, #E8C070 100%);
+  background: var(--color-primary);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -395,7 +404,7 @@ p {
    CTA Section
    =========================================== */
 .cta {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: var(--color-primary);
   color: var(--color-white);
   text-align: center;
 }
@@ -427,7 +436,7 @@ p {
    Page Header
    =========================================== */
 .page-header {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: var(--color-primary);
   color: var(--color-white);
   padding: var(--space-32) 0 var(--space-16);
   text-align: center;
@@ -492,7 +501,7 @@ p {
 .contact__icon {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: var(--color-primary);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;

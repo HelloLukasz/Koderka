@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Koderka builds thoughtfully crafted software products. Discover Verba, our vocabulary learning app designed to make language acquisition natural and effective.">
-  <meta name="keywords" content="Koderka, Verba, vocabulary app, language learning, software development">
+  <meta name="description" content="Koderka builds thoughtfully crafted software products. Discover Verba, translation management for people who ship.">
+  <meta name="keywords" content="Koderka, Verba, translation management, localisation, i18n, software development">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Koderka - Thoughtfully Crafted Software">
-  <meta property="og:description" content="Building software products that solve real problems. Discover Verba, our vocabulary learning app.">
+  <meta property="og:description" content="Building software products that solve real problems. Discover Verba, translation management for people who ship.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://koderka.com">
 
@@ -89,15 +89,14 @@
           <span class="product-card__badge">Flagship Product</span>
           <h3 class="product-card__title">Verba</h3>
           <p class="product-card__description">
-            A vocabulary learning app designed to make language acquisition natural and effective.
-            Verba uses spaced repetition and contextual learning to help you remember words
-            and actually use them in conversation.
+            Translation management for people who ship. Super easy localisation setup
+            so you can focus on building and go global without thinking about translations.
           </p>
           <ul class="product-card__features">
-            <li>Smart spaced repetition algorithm</li>
-            <li>Contextual examples for every word</li>
-            <li>Beautiful, distraction-free interface</li>
-            <li>Progress tracking and insights</li>
+            <li>Dead simple setup in minutes</li>
+            <li>Sync translations across your entire stack</li>
+            <li>AI-powered translations that sound natural</li>
+            <li>Ship to any market, any language</li>
           </ul>
           <a href="https://verba.dev" class="btn btn-primary" target="_blank" rel="noopener">
             Visit Verba
@@ -120,24 +119,24 @@
             </div>
             <div class="verba-preview__body">
               <div class="verba-preview__item">
-                <div class="verba-preview__icon">A</div>
+                <div class="verba-preview__icon">EN</div>
                 <div class="verba-preview__text">
-                  <div class="verba-preview__word">aberration</div>
-                  <div class="verba-preview__translation">a departure from what is normal</div>
+                  <div class="verba-preview__word">Welcome back!</div>
+                  <div class="verba-preview__translation">welcome.message</div>
                 </div>
               </div>
               <div class="verba-preview__item">
-                <div class="verba-preview__icon">E</div>
+                <div class="verba-preview__icon">DE</div>
                 <div class="verba-preview__text">
-                  <div class="verba-preview__word">ephemeral</div>
-                  <div class="verba-preview__translation">lasting for a very short time</div>
+                  <div class="verba-preview__word">Willkommen zurück!</div>
+                  <div class="verba-preview__translation">welcome.message</div>
                 </div>
               </div>
               <div class="verba-preview__item">
-                <div class="verba-preview__icon">S</div>
+                <div class="verba-preview__icon">ES</div>
                 <div class="verba-preview__text">
-                  <div class="verba-preview__word">serendipity</div>
-                  <div class="verba-preview__translation">fortunate happenstance</div>
+                  <div class="verba-preview__word">¡Bienvenido de nuevo!</div>
+                  <div class="verba-preview__translation">welcome.message</div>
                 </div>
               </div>
             </div>
@@ -165,9 +164,15 @@
             it can be.
           </p>
           <div class="about__founder">
-            <div class="about__founder-avatar">[PLACEHOLDER: INITIALS]</div>
+            <div class="about__founder-avatar">
+              <!-- Replace with: <img src="/assets/images/founder.jpg" alt="Łukasz Nawrocki"> -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
             <div class="about__founder-info">
-              <h4>[PLACEHOLDER: Founder Name]</h4>
+              <h4>Łukasz Nawrocki</h4>
               <p>Founder & Developer</p>
             </div>
           </div>
@@ -196,7 +201,7 @@
         </p>
         <div class="cta__buttons">
           <a href="/contact" class="btn btn-white btn-lg">Get in Touch</a>
-          <a href="https://verba.dev" class="btn btn-accent btn-lg" target="_blank" rel="noopener">Try Verba Free</a>
+          <a href="https://verba.dev" class="btn btn-accent btn-lg" target="_blank" rel="noopener">Try Verba</a>
         </div>
       </div>
     </div>
@@ -231,9 +236,7 @@
         <div>
           <h4 class="footer__title">Contact</h4>
           <ul class="footer__links">
-            <li><a href="mailto:[PLACEHOLDER: EMAIL]">[PLACEHOLDER: EMAIL]</a></li>
-            <li>[PLACEHOLDER: ADDRESS LINE 1]</li>
-            <li>[PLACEHOLDER: ADDRESS LINE 2]</li>
+            <li><a href="/contact">Get in touch</a></li>
           </ul>
         </div>
       </div>
