@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Koderka. We'd love to hear from you about our products, partnerships, or any questions you might have.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact - Koderka">
+  <meta property="og:description" content="Get in touch with Koderka. We'd love to hear from you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://koderka.com/contact">
+
+  <title>Contact - Koderka</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav is-scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="/" class="nav__logo">Koderka</a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="/#products" class="nav__link">Products</a></li>
+        <li><a href="/#about" class="nav__link">About</a></li>
+        <li><a href="/contact" class="btn btn-primary btn-sm">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-header__title animate-fade-in-up">Get in Touch</h1>
+      <p class="page-header__description animate-fade-in-up">
+        Have a question about our products or want to work together?
+        We'd love to hear from you.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section-lg">
+    <div class="container">
+      <div class="contact__grid">
+        <!-- Contact Form -->
+        <div class="contact__form-wrapper animate-fade-in-up">
+          <div id="form-success" class="alert alert-success" style="display: none;">
+            <strong>Message sent!</strong> Thank you for reaching out. We'll get back to you as soon as possible.
+          </div>
+
+          <div id="form-error" class="alert alert-error" style="display: none;">
+            <strong>Something went wrong.</strong> Please try again or email us directly.
+          </div>
+
+          <form id="contact-form" action="[PLACEHOLDER: FORMSPREE_ENDPOINT]" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Your name"
+                required
+                minlength="2"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select id="subject" name="subject" class="form-select" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="verba">Question about Verba</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="support">Support Request</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="How can we help you?"
+                required
+                minlength="10"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact__info animate-slide-right">
+          <h3>Other Ways to Reach Us</h3>
+          <p>
+            Prefer to reach out directly? Here's how you can contact us.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__item">
+              <div class="contact__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact__item-content">
+                <h4>Email</h4>
+                <p><a href="mailto:[PLACEHOLDER: EMAIL]">[PLACEHOLDER: EMAIL]</a></p>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact__item-content">
+                <h4>Address</h4>
+                <p>
+                  [PLACEHOLDER: ADDRESS LINE 1]<br>
+                  [PLACEHOLDER: ADDRESS LINE 2]
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__visual-card hover-lift" style="margin-top: var(--space-8);">
+            <div class="about__visual-icon">⏰</div>
+            <h3 class="about__visual-title">Response Time</h3>
+            <p class="about__visual-text">
+              We typically respond to all inquiries within 1-2 business days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="/" class="footer__logo">Koderka</a>
+          <p class="footer__description">
+            Building thoughtfully crafted software products that solve real problems.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Products</h4>
+          <ul class="footer__links">
+            <li><a href="https://verba.dev" target="_blank" rel="noopener">Verba</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:[PLACEHOLDER: EMAIL]">[PLACEHOLDER: EMAIL]</a></li>
+            <li>[PLACEHOLDER: ADDRESS LINE 1]</li>
+            <li>[PLACEHOLDER: ADDRESS LINE 2]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <script>document.write(new Date().getFullYear())</script> Koderka. All rights reserved.
+        </p>
+        <div class="footer__legal">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Robots.txt for koderka.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://koderka.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
